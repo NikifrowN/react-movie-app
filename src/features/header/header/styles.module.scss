@@ -1,0 +1,16 @@
+.root{
+   text-align: center;
+   padding: 1rem 0 2.5rem 0;
+}
+
+.title{
+   font-size: 3.125rem;
+   color: var(--white);
+
+   span{
+      color: var(--black);
+      border-radius: 0.625rem;
+      background-color: var(--yellow);
+      padding: 0 0.625rem 0.625rem 0.625rem;
+   }
+}
