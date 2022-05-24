@@ -1,0 +1,13 @@
+.root{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 3.125rem;
+   gap: 1.25rem;
+}
+
+.title{
+   text-align: center;
+   font-size: 1.625rem;
+   font-weight: 500;
+   color: var(--white);
+}
