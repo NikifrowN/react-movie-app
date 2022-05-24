@@ -14,7 +14,6 @@ export const PopularContainer = () => {
       dispatch(loadPopular());
    }, [])
 
-   // console.log(comingSoonIds)
    return error ? (<span>error</span>) : (
       isLoading ? (<span>loading</span>) : (
          <PopularMovies popularIds={popularIds} />

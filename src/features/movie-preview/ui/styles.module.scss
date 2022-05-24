@@ -14,20 +14,3 @@
    height: 100%;
    object-fit: cover;
 }
-
-.title{
-   position: absolute;
-   z-index: 10;
-   left: 50%;
-   bottom: 0%;
-   transform: translate(-50%, 0%);
-   color: white;
-   text-align: center;
-   font-weight: 600;
-   font-size: 0.9rem;
-   height: 40%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-shadow: 2px 2px 2px #000;
-}

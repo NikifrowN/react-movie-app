@@ -1,16 +1,10 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { Link } from 'react-router-dom';
-import { MoviePreview } from '../../../movie-preview/ui/component';
 import { MoviePreviewContainer } from '../../../movie-preview/ui/container';
 import styles from './styles.module.scss'
 
 export const Top10Movies = ({ids, label}) => {
-   if (!ids) {
-      return null;
-   }
-
-   console.log(ids)
    return(
       <div className={styles.root}>
          <p className={styles.title}>{label}</p>

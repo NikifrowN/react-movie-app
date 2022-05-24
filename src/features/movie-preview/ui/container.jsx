@@ -7,7 +7,7 @@ export const MoviePreviewContainer = ({movieId, label}) => {
    let selector = '';
    if(label === 'Coming soon') {
       selector = selectComingSoonById;
-   } else if (label === 'Top 10 movies') {
+   } else if (label === 'Top 10 popular movies') {
       selector = selectPopularById;
    }
 
