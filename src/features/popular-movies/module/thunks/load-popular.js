@@ -1,8 +1,14 @@
 import { popularSlice } from "..";
-
+import { selectPopularModuleState } from "../selectors";
 
 export function loadPopular() {
-   return function (dispatch) {
+   return function (dispatch, getState) {
+      const data = selectPopularModuleState(getState());
+
+      if(data?.length) {
+         return;
+      }
+
       dispatch(popularSlice.actions.startLoading(null));
 
       fetch("https://imdb-api.com/en/API/MostPopularMovies/k_aiyw0b1a")
@@ -10,8 +16,5 @@ export function loadPopular() {
       .then((popular) => {
          dispatch(popularSlice.actions.finishLoading(popular.items));
       })
-      .catch((error) => {
-         dispatch(popularSlice.actions.failLoading(error));
-      });
    };
 }

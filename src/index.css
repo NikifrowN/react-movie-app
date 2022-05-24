@@ -3,6 +3,8 @@
   --white: rgb(255, 255, 255);
   --yellow: rgb(255, 242, 0);
   --main-grey: rgb(79, 79, 79);
+  --light-grey: rgb(117, 117, 117);
+  --dark-grey: rgb(51, 51, 51);
 }
 
 body {
@@ -21,5 +23,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 

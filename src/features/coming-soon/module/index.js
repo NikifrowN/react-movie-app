@@ -11,15 +11,9 @@ export const comingSoonSlice = createSlice({
   reducers: {
     startLoading: (state) => {
       state.isLoading = true;
-      state.error = null;
-    },
-    failLoading: (state, { payload }) => {
-      state.isLoading = false;
-      state.error = payload;
     },
     finishLoading: (state, { payload }) => {
       state.isLoading = false;
-      state.error = null;
 
       state.entities = {
         ...state.entities,

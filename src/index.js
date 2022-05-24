@@ -1,15 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-import App from './App';
 import { Provider } from 'react-redux';
 import { store } from './root-module';
+import { Header } from './features/header/header/component';
+import { MainPage } from './pages/main-page/component';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <Header />
+        <div className='wrapper'>
+          <Routes>
+            <Route path='/' element={<MainPage/>} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );

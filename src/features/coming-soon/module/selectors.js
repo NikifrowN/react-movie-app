@@ -5,9 +5,6 @@ export const selectComingSoonIds = (state) =>
 
 export const selectIsComingSoonLoading = (state) => 
    selectComingSoonModuleState(state).isLoading;
-
-export const selectIsComingSoonError = (state) =>
-   selectComingSoonModuleState(state).error;
    
 export const selectComingSoonById = (state, payload) =>
    selectComingSoonModuleState(state).entities[payload];      

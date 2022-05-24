@@ -5,9 +5,6 @@ export const selectPopularIds = (state) =>
 
 export const selectIsPopularLoading = (state) => 
    selectPopularModuleState(state).isLoading;
-
-export const selectIsPopularError = (state) =>
-   selectPopularModuleState(state).error;
    
 export const selectPopularById = (state, payload) =>
    selectPopularModuleState(state).entities[payload];      
