@@ -11,8 +11,8 @@
    font-weight: 500;
    transition: all 0.3s ease;
 
-   :hover{
-      color: var(--black);
+   &:hover{
+      color: var(--yellow);
       text-decoration: underline;
    }
 }

@@ -1,0 +1,25 @@
+.item{
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+   border: 2px black solid;
+   border-radius: 5px;
+   padding: 5px;
+}
+
+.title{
+   font-weight: 500;
+   font-size: 26px;
+   color: whitesmoke;
+}
+
+.rating{
+   font-size: 30px;
+   font-weight: 700;
+   padding-right: 10px;
+}
+.rating span{
+   color: rgb(234, 255, 0);
+}

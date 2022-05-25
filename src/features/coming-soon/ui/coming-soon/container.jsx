@@ -10,13 +10,14 @@ export const ComingSoonContainer = () => {
    const dispatch = useDispatch();
    const comingSoonIds = useSelector(selectComingSoonIds);
    const isLoading = useSelector(selectIsComingSoonLoading);
+   const noData = !comingSoonIds?.length;
 
    useEffect(() => {
       dispatch(loadComingSoon());
-   }, [])
+   }, []);
 
    return isLoading ? (<LoadingSpinner/>) : (
-      !comingSoonIds?.length ? (<Error/>) : (
+      noData ? (<Error/>) : (
          <ComingSoon comingSoonIds={comingSoonIds} />
       )
    )

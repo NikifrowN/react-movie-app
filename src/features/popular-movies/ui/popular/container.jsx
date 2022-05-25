@@ -10,13 +10,14 @@ export const PopularContainer = () => {
    const dispatch = useDispatch();
    const popularIds = useSelector(selectPopularIds);
    const isLoading = useSelector(selectIsPopularLoading);
+   const noData = !popularIds?.length;
 
    useEffect(() => {
       dispatch(loadPopular());
    }, [])
 
    return isLoading ? (<LoadingSpinner/>) : (
-      !popularIds?.length  ? (<Error/>) : (
+      noData ? (<Error/>) : (
          <PopularMovies popularIds={popularIds} />
       )
    )
