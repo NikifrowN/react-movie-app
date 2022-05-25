@@ -11,8 +11,8 @@ export const MoviePreviewContainer = ({movieId, label}) => {
       selector = selectPopularById;
    }
 
-   const movie = useSelector(state => selector(state, movieId))
-   console.log(movie)
+   const movie = useSelector(state => selector(state, movieId));
+   
    return(
       <MoviePreview movie={movie} />
    )

@@ -1,8 +1,9 @@
 .root{
    display: flex;
    flex-direction: column;
-   margin-bottom: 3.125rem;
-   gap: 1.25rem;
+   // margin-bottom: 3.125rem;
+   // gap: 1.25rem;
+   max-width: 1200px;
 }
 
 .title{
@@ -11,3 +12,6 @@
    font-weight: 500;
    color: var(--white);
 }
+
+
+

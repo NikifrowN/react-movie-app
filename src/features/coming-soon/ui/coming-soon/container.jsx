@@ -15,8 +15,8 @@ export const ComingSoonContainer = () => {
       dispatch(loadComingSoon());
    }, [])
 
-   return !comingSoonIds?.length ? (<Error/>) : (
-      isLoading ? (<LoadingSpinner/>) : (
+   return isLoading ? (<LoadingSpinner/>) : (
+      !comingSoonIds?.length ? (<Error/>) : (
          <ComingSoon comingSoonIds={comingSoonIds} />
       )
    )

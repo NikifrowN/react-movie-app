@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { Error } from "../../../error/ui/component";
+import { LoadingSpinner } from "../../../loading/ui/component";
 import { selectIsPopularLoading, selectPopularIds } from "../../module/selectors";
 import { loadPopular } from "../../module/thunks/load-popular";
 import { PopularMovies } from "./component";
@@ -14,8 +15,8 @@ export const PopularContainer = () => {
       dispatch(loadPopular());
    }, [])
 
-   return !popularIds?.length ? (<Error/>) : (
-      isLoading ? (<span>loading</span>) : (
+   return isLoading ? (<LoadingSpinner/>) : (
+      !popularIds?.length  ? (<Error/>) : (
          <PopularMovies popularIds={popularIds} />
       )
    )
