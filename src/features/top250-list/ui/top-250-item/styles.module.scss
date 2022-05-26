@@ -3,23 +3,24 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin-bottom: 20px;
-   border: 2px black solid;
-   border-radius: 5px;
-   padding: 5px;
+   margin-bottom: 1.25rem;
+   border: 0.125rem var(--black) solid;
+   border-radius: 0.3125rem;
+   padding: 0.3125rem;
 }
 
 .title{
    font-weight: 500;
-   font-size: 26px;
-   color: whitesmoke;
+   font-size: 1.625rem;
+   color: var(--white);
 }
 
 .rating{
-   font-size: 30px;
+   font-size: 1.875rem;
    font-weight: 700;
-   padding-right: 10px;
-}
-.rating span{
-   color: rgb(234, 255, 0);
+   padding-right: 0.625rem;
+
+   span{
+      color: var(--yellow);
+   }
 }

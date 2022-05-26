@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 export const Top250List = ({top, label}) => {
    const { items, requestSort} = useSortableData(top);
 
-   console.log('asdasd')
+   console.log(items)
    return(
       <div className={styles.root}>
          <h3 className={styles.title}>
