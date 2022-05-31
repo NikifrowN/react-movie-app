@@ -1,41 +1,12 @@
-import { useState } from 'react';
-import { Tabs } from '../../../tabs/ui/tabs/component';
-import { AddToWatchlist } from '../../../watchlist/ui/add-to-watchlist/ui/add-to-watchlist/component';
 import { InfoItem } from '../info-item/component'
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 
-export const MovieCardInfo = ({movie, setActiveTab, activeTab, addMovie, deleteMovie}) => {
-   // const [isAdded, setAdded] = useState(false);
-
-   // const toggleAdded = () => {
-   //    setAdded(!isAdded)
-   // }
-
-   // function handleClick(e) {
-   //    isAdded ? deleteMovie(movie.id) : addMovie(movie.id)
-   //    toggleAdded();
-   //  }
-
-   const actorLabel = {
-      label: 'Show Actors',
-      key: 'actors',
-   };
-   const awardsLabel = {
-      label: movie.awards ? 'Show Awards' : null,
-      key: 'awards',
-   };
-   const labels = [actorLabel, awardsLabel];
+export const MovieCardInfo = ({movie}) => {
 
    return(
       <div className={styles.root}>
          <div className={styles.poster}>
             <img src={movie.image} />
-            <AddToWatchlist 
-               size='big'
-               id={movie.id}
-               addMovie={addMovie}
-               deleteMovie={deleteMovie} 
-            />
          </div>
          <div className={styles.about}>
             <div className={styles.aboutItems}>
@@ -54,7 +25,6 @@ export const MovieCardInfo = ({movie, setActiveTab, activeTab, addMovie, deleteM
                <InfoItem text={movie.writerList} name={'Written By:'} />
                <InfoItem text={movie.starList} name={'Stars:'} />   
             </div>
-            <Tabs labels={labels} setActiveTab={setActiveTab} activeTab={activeTab} />
          </div>
       </div>
    )

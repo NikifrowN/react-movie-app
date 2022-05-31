@@ -1,0 +1,20 @@
+.root{
+   font-size: 1.25rem;
+}
+
+.title{
+   font-weight: 600;
+   margin-right: 0.3125rem;
+}
+.name{
+   transition: all 0.3s ease;
+
+   &:hover{
+      color: var(--white);
+   }
+
+   &:not(:last-child):after{
+      content: ', ';
+      color: var(--black);
+   }
+}

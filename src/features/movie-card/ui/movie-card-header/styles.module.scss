@@ -2,30 +2,30 @@
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
-   background-color: black;
-   padding: 15px;
-   border-radius: 10px;
+   background-color: var(--black);
+   padding: 0.9375rem;
+   border-radius: 0.625rem;
 }
 
 .title{
-   font-size: 30px;
-   color: rgb(122, 122, 122);
+   font-size: 1.875rem;
+   color: var(--light-grey);
    font-weight: 600;
 }
 .info{
    display: flex;
-   gap: 20px;
+   gap: 1.25rem;
    font-weight: 500;
-   color: yellow;
+   color: var(--yellow);
 }
 
 .ratingTitle{
-   color: rgb(122, 122, 122);
+   color: var(--light-grey);
    font-weight: 500;
-   margin-right: 5px;
+   margin-right: 0.3125rem;
 }
 .ratingData{
-   font-size: 20px;
-   color: yellow;
+   font-size: 1.25rem;
+   color: var(--yellow);
    font-weight: 700;
 }

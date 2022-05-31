@@ -1,15 +1,13 @@
+import { MovieCardCast } from "../movie-card-actors/component";
 import { MovieCardHeader } from "../movie-card-header/component";
+import { MovieCardInfo } from "../movie-card-info/component";
 
 export const MovieCard = ({movie}) => (
    <>
       <MovieCardHeader movie={movie} />
-      {/* <MovieCardInfoContainer 
+      <MovieCardInfo
          movie={movie} 
-         setActiveTab={setActiveTab}
-         activeTab={activeTab}
       />
-      <MovieCardCast cast={movie.actorList}/> */}
-      
-   
+      <MovieCardCast cast={movie.actorList}/>
    </>
 )

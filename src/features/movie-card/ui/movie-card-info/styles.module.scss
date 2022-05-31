@@ -1,0 +1,54 @@
+.root{
+   display: flex;
+   gap: 2.5rem;
+   margin-top: 2.5rem;
+   align-items: center;
+}
+
+.poster{
+   min-width: 18.75rem;
+   max-width: 18.75rem;
+   position: relative;
+
+   img{
+      max-width: 100%;
+      border-radius: 0.3125rem;
+   }
+}
+// .poster button{
+//    position: absolute;
+//    top: 10px;
+//    left: 10px;
+// }
+
+.about{
+   background-color: var(--light-grey);
+   border-radius: 0.3125rem;
+   color: var(--black);
+   padding: 0.9375rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.aboutItems{
+   display: flex;
+   flex-direction: column;
+   gap: 0.625rem;
+
+   span{
+      font-weight: 500;
+   }
+}
+
+.genreList{
+   display: flex;
+   gap: 0.625rem;
+}
+.genre{
+   font-size: 1.25rem;
+   color: var(--white);
+   border: 0.125rem var(--white) solid;
+   padding: 0.3125rem 0.625rem;
+   border-radius: 0.625rem;
+}
