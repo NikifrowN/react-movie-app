@@ -1,5 +1,5 @@
 .root{
-   margin: 1.25rem 0;
+   flex: 1;
 }
 .buttons{
    display: flex;
@@ -27,7 +27,7 @@
    font-size: 1.875rem;
    color: var(--white);
    text-align: center;
-   margin-bottom: 0.625rem;
+   margin-bottom: 1rem;
 }
 
 .link{

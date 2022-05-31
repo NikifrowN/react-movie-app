@@ -5,7 +5,6 @@ import { MoviePreviewContainer } from '../../../movie-preview/ui/container';
 import styles from './styles.module.scss'
 
 export const Top10Movies = ({ids, label}) => {
-   console.log(ids.length)
    return(
       <div className={styles.root}>
          <p className={styles.title}>{label}</p>
@@ -30,20 +29,6 @@ export const Top10Movies = ({ids, label}) => {
                )
             })}
          </Splide>   
-         {/* <Splide options={{
-            fixedWidth : '10rem',
-            fixedHeight: '6rem',
-            gap        : '1rem',
-            
-         }}>
-            {ids.slice(0, 10).map((movieId) => {
-               return(
-                  <SplideSlide>
-                     hello
-                  </SplideSlide>
-               )
-            })}
-         </Splide> */}
       </div>
    )
 }

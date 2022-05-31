@@ -1,0 +1,24 @@
+.root{
+   display: flex;
+   gap: 1.25rem;
+   align-items: center;
+   margin-bottom: 0.625rem;
+}
+
+.image{
+   max-width: 2.5rem;
+}
+
+.image img{
+   max-width: 100%;
+}
+
+.title{
+   font-size: 1.25rem;
+   margin-right: 0.3125rem;
+   color: var(--white);
+   transition: all 0.3s ease;
+}
+.title:hover{
+   color: var(--black);
+}

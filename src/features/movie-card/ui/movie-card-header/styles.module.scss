@@ -1,0 +1,31 @@
+.root{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   background-color: black;
+   padding: 15px;
+   border-radius: 10px;
+}
+
+.title{
+   font-size: 30px;
+   color: rgb(122, 122, 122);
+   font-weight: 600;
+}
+.info{
+   display: flex;
+   gap: 20px;
+   font-weight: 500;
+   color: yellow;
+}
+
+.ratingTitle{
+   color: rgb(122, 122, 122);
+   font-weight: 500;
+   margin-right: 5px;
+}
+.ratingData{
+   font-size: 20px;
+   color: yellow;
+   font-weight: 700;
+}

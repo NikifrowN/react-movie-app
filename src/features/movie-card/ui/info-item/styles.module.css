@@ -1,0 +1,19 @@
+.root{
+   font-size: 20px;
+}
+
+.title{
+   font-weight: 600;
+   margin-right: 5px;
+}
+.name{
+   transition: all 0.3s ease;
+}
+.name:hover{
+   color: white;
+}
+
+.name:not(:last-child):after{
+   content: ', ';
+   color: black;
+}

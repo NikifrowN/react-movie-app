@@ -12,7 +12,7 @@ export function loadComingSoon() {
 
       dispatch(comingSoonSlice.actions.startLoading(null));
 
-      fetch("https://imdb-api.com/en/API/ComingSoon/k_aiyw0b1a")
+      fetch(`https://imdb-api.com/en/API/ComingSoon/${process.env.REACT_APP_API_KEY}`)
       .then((response) => response.json())
       .then((comingSoon) => {
          dispatch(comingSoonSlice.actions.finishLoading(comingSoon.items));
