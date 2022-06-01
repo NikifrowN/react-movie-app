@@ -4,7 +4,7 @@ import { selectPopularIds, selectPopularModuleState } from "../selectors";
 export function loadPopular() {
    return function (dispatch, getState) {
       const data = selectPopularModuleState(getState())
-      console.log(data)
+      
       if(data.length) {
          return;
       }

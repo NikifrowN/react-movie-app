@@ -11,8 +11,8 @@ export const watchlistSlice = createSlice({
       state.push(payload);
     },
     removeMovie: (state, { payload }) => {
-      if(JSON.stringify(state).includes(JSON.stringify(payload))) {
-        const index = state.findIndex(i => i == payload);
+      if(state.find(movie => movie.id === payload.id)){
+        const index = state.map(function(e) { return e.id; }).indexOf(payload.id);
         state.splice(index, 1);
       }
     },
