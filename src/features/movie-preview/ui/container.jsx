@@ -1,6 +1,8 @@
-import { useSelector } from "react-redux"
+import { useCallback } from "react";
+import { useDispatch, useSelector } from "react-redux"
 import { selectComingSoonById } from "../../coming-soon/module/selectors"
 import { selectPopularById } from "../../popular-movies/module/selectors";
+import { watchlistSlice } from "../../watchlist/module";
 import { MoviePreview } from "./component"
 
 export const MoviePreviewContainer = ({movieId, label}) => {
@@ -14,6 +16,8 @@ export const MoviePreviewContainer = ({movieId, label}) => {
    const movie = useSelector(state => selector(state, movieId));
    
    return(
-      <MoviePreview movie={movie} />
+      <MoviePreview 
+         movie={movie}
+      />
    )
 }

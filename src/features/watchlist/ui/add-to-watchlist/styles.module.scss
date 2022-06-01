@@ -1,0 +1,22 @@
+.addBtn{
+   position: absolute;
+   z-index: 50;
+   top: 5px;
+   left: 5px;
+   border: none;
+   border-radius: 10px;
+   background: rgba(255, 255, 255, 0.4);
+   cursor: pointer;
+}
+
+.big{
+   width: 40px;
+}
+
+.medium{
+   width: 20px;
+}
+
+.small{
+   width: 15px;
+}

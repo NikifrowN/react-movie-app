@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 import { KnownFor } from "../known-for/component";
-// import { Tabs } from '../../../tabs/ui/tabs/component';
+import { Tabs } from '../../../tabs/ui/tabs/component';
 
 export const PersonCardInfo = ({person, activeTab, setActiveTab, actedIn, directed}) => {
    const actedLabel = {
@@ -20,13 +20,13 @@ export const PersonCardInfo = ({person, activeTab, setActiveTab, actedIn, direct
             <img src={person.image} />
          </div>
          <div className={styles.content}>
-            {/* <div className={styles.info}>
+            <div className={styles.info}>
                <p>
-                  {person.awards}
+                  Awards: {person.awards}
                </p>
-            </div> */}
+            </div>
             <KnownFor knownFor={person.knownFor}/>
-            {/* <Tabs labels={labels} setActiveTab={setActiveTab} activeTab={activeTab} /> */}
+            <Tabs labels={labels} setActiveTab={setActiveTab} activeTab={activeTab} />
          </div>
       </div>
    )

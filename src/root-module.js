@@ -7,6 +7,7 @@ import { top250ShowsSlice } from "./features/top250-shows/module";
 import { searchedSlice } from "./features/searched/module";
 import { movieSlice } from "./features/movie-card/module";
 import { personSlice } from "./features/person-card/module";
+import { watchlistSlice } from "./features/watchlist/module";
 
 const rootReducer = combineReducers({
    comingSoon: comingSoonSlice.reducer,
@@ -16,7 +17,7 @@ const rootReducer = combineReducers({
    searched: searchedSlice.reducer,
    movie: movieSlice.reducer,
    person: personSlice.reducer,
-   
+   watchlist: watchlistSlice.reducer,
 });
 
 export const store = configureStore({

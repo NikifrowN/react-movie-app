@@ -1,0 +1,34 @@
+.root{
+   display: flex;
+   gap: 1.25rem;
+   margin-top: 2.5rem;
+}
+
+.tab{
+   cursor: pointer;
+   font-size: 1.25rem;
+   border: 0.125rem solid var(--black);
+   border-radius: 0.3125rem;
+   font-weight: 600;
+   padding: 0.3125rem 0.625rem;
+   background-color: var(--white);
+   color: var(--black);
+   transition: all 0.3s ease;
+
+   &:hover{
+      border: 0.125rem solid var(--white);
+      background-color: var(--black);
+      color: var(--white);
+   }
+}
+
+.active{
+   cursor: pointer;
+   font-size: 1.25rem;
+   border: 0.125rem solid var(--white);
+   border-radius: 0.3125rem;
+   font-weight: 600;
+   padding: 0.3125rem 0.625rem;
+   background-color: var(--black);
+   color: var(--white);
+}

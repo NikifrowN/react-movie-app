@@ -11,6 +11,7 @@ import { Top250ShowsPage } from './pages/top250shows-page/component';
 import { SearchedPage } from './pages/searched-page/component';
 import { MoviePage } from './pages/movie-page/component';
 import { PersonPage } from './pages/perosn-page/component';
+import { WatchlistPage } from './pages/watchlist-page/component';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +27,7 @@ root.render(
             <Route path='/search/:search' element={<SearchedPage />} />
             <Route path='/movie/:movie' element={<MoviePage />} />
             <Route path='/person/:person' element={<PersonPage/>} />
+            <Route path='/watchlist' element={<WatchlistPage/>} />
           </Routes>
         </main>
       </BrowserRouter>
