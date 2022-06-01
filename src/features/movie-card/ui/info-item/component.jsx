@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './styles.module.scss';
 
-export const InfoItem = ({text, name}) => {
+export const InfoItem = ({text, label}) => {
    if(!text) {
       return null;
    }
@@ -9,7 +9,7 @@ export const InfoItem = ({text, name}) => {
    return(
       <div className={styles.root}>                  
          <span className={styles.title}>
-            {name}
+            {label}
          </span>      
          {Array.isArray(text) ? (
             text.map((item) => {

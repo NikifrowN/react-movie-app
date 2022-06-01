@@ -10,6 +10,7 @@ import { Top250MoviesPage } from './pages/top250movies-page/component';
 import { Top250ShowsPage } from './pages/top250shows-page/component';
 import { SearchedPage } from './pages/searched-page/component';
 import { MoviePage } from './pages/movie-page/component';
+import { PersonPage } from './pages/perosn-page/component';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,15 +18,16 @@ root.render(
     <Provider store={store}>
       <BrowserRouter>
         <Header />
-        <div className='wrapper'>
+        <main className='wrapper'>
           <Routes>
             <Route path='/' element={<MainPage/>} />
             <Route path='/top250movies' element={<Top250MoviesPage/>} />
             <Route path='/top250TVs' element={<Top250ShowsPage/>} />
             <Route path='/search/:search' element={<SearchedPage />} />
             <Route path='/movie/:movie' element={<MoviePage />} />
+            <Route path='/person/:person' element={<PersonPage/>} />
           </Routes>
-        </div>
+        </main>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>

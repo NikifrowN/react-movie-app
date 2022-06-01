@@ -1,0 +1,45 @@
+.root{
+   margin: 1.25rem 0;
+}
+
+.header{
+   font-size: 1.25rem;
+   margin-bottom: 0.3125rem;
+}
+
+.content{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   gap: 1.25rem;
+}
+
+.item{
+   display: flex;
+   gap: 0.3125rem;
+   align-items: center;
+}
+
+.poster{
+   max-width: 5rem;
+
+   img{
+      max-width: 100%;
+      border-radius: 0.3125rem;
+   }
+}
+
+.title{
+   font-weight: 600;
+   font-size: 1.25rem;
+   transition: all 0.3s ease;
+
+   &:hover{
+      color: var(--white);
+   }
+}
+
+.year{
+   font-weight: 500;
+}
+

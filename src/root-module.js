@@ -6,6 +6,7 @@ import { top250MoviesSlice } from "./features/top250-movies/module";
 import { top250ShowsSlice } from "./features/top250-shows/module";
 import { searchedSlice } from "./features/searched/module";
 import { movieSlice } from "./features/movie-card/module";
+import { personSlice } from "./features/person-card/module";
 
 const rootReducer = combineReducers({
    comingSoon: comingSoonSlice.reducer,
@@ -14,6 +15,7 @@ const rootReducer = combineReducers({
    top250shows: top250ShowsSlice.reducer,
    searched: searchedSlice.reducer,
    movie: movieSlice.reducer,
+   person: personSlice.reducer,
    
 });
 

@@ -19,11 +19,11 @@ export const MovieCardInfo = ({movie}) => {
                      )
                   })}
                </div>
-               <InfoItem text={movie.awards} name={'Awards:'} />
-               <InfoItem text={movie.plot} name={'Plot:'} />
-               <InfoItem text={movie.directorList} name={'Directed by:'} />
-               <InfoItem text={movie.writerList} name={'Written By:'} />
-               <InfoItem text={movie.starList} name={'Stars:'} />   
+               <InfoItem text={movie.awards} label={'Awards:'} />
+               <InfoItem text={movie.plot} label={'Plot:'} />
+               <InfoItem text={movie.directorList} label={'Directed by:'} />
+               <InfoItem text={movie.writerList} label={'Written By:'} />
+               <InfoItem text={movie.starList} label={'Stars:'} />   
             </div>
          </div>
       </div>

@@ -1,0 +1,21 @@
+.root{
+   border-bottom: 0.125rem var(--white) solid;
+   padding-bottom: 0.3125rem;
+   margin: 0.625rem 0;
+}
+
+.title{
+   font-size: 1.25rem;
+   font-weight: 600;
+   margin-top: 1.25rem;
+   color: var(--white);
+   transition: all 0.3s ease;
+
+   &:hover{
+      color: var(--black);
+   }
+}
+
+.description{
+   color: var(--black);
+}

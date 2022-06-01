@@ -12,7 +12,8 @@ export const MovieCardContainer = () => {
    const dispatch = useDispatch();
    const movie = useSelector(selectMovie);
    const isLoading = useSelector(selectIsMovieLoading);
-   const noData = !!movie;
+   const noData = !movie;
+   console.log(movie)
 
    useEffect(() => {
       dispatch(loadMovie(params.movie))
