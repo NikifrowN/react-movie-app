@@ -1,4 +1,3 @@
-import { TestComp } from "./test"
 
 export const TestContainer = () => {
    const movie1 = {
@@ -6,6 +5,6 @@ export const TestContainer = () => {
       data: 'data1',
    }
    return(
-      <TestComp movie={movie1}/>
+      <p>salem</p>
    )
 }

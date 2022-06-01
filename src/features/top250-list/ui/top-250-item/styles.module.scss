@@ -25,10 +25,14 @@
    }
 }
 .poster{
+   min-width: 9.375rem;
    max-width: 9.375rem;
+   position: relative;
 
-   img{
-      width: 100%;
-      border-radius: 0.3125rem;
-   }
+   
+}
+
+.image{
+   width: 100%;
+   border-radius: 0.3125rem;
 }

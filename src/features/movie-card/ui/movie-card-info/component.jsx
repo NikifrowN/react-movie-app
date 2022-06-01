@@ -1,3 +1,4 @@
+import { AddToWatchilstContainer } from '../../../watchlist/ui/add-to-watchlist/container'
 import { InfoItem } from '../info-item/component'
 import styles from './styles.module.scss'
 
@@ -7,6 +8,10 @@ export const MovieCardInfo = ({movie}) => {
       <div className={styles.root}>
          <div className={styles.poster}>
             <img src={movie.image} />
+            <AddToWatchilstContainer 
+               movie={movie}
+               size='big'
+            />
          </div>
          <div className={styles.about}>
             <div className={styles.aboutItems}>
