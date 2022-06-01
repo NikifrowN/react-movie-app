@@ -13,7 +13,6 @@ export const PersonContainer = () => {
    const person = useSelector(selectPerson);
    const isLoading = useSelector(selectIsPersonLoading);
    const noData = !person;
-   console.log(person)
 
    useEffect(() => {
       dispatch(loadPerson(params.person))

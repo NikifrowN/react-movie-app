@@ -16,7 +16,7 @@ export const SearchedContainer = () => {
 
    useEffect(() => {
       dispatch(loadSearched(params.search));
-   }, [params.search])
+   }, [params.search]);
 
    return isLoading ? (<LoadingSpinner/>) : (
       noData ? (<Error/>) : (

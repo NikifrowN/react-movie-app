@@ -13,12 +13,11 @@ export const MovieCardContainer = () => {
    const movie = useSelector(selectMovie);
    const isLoading = useSelector(selectIsMovieLoading);
    const noData = !movie;
-   console.log(movie)
 
    useEffect(() => {
       dispatch(loadMovie(params.movie))
    }, [params.movie]);
-   console.log(noData)
+
    return isLoading ? (<LoadingSpinner/>) : (
       noData ? (<Error/>) : (
          <MovieCard movie={movie} />

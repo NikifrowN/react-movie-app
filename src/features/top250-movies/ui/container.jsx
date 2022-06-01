@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux";
 import { Error } from "../../error/ui/component";
 import { LoadingSpinner } from "../../loading/ui/component";
 import { selectIsTop250MoviesLoading, selectTop250Movies} from "../module/selectors";
 import { loadTop250Movies } from "../module/thunks/load-250movies";
-import { Top250Movies } from "./component"
+import { Top250Movies } from "./component";
 
 export const Top250MoviesContainer = () => {
    const dispatch = useDispatch();

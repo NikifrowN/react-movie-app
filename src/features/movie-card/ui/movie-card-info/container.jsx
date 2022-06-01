@@ -1,6 +1,6 @@
-import { useDispatch } from "react-redux"
+import { useDispatch } from "react-redux";
 import { addMovieToList, deleteMovieFromList } from "../../../watchlist/module/actions";
-import { MovieCardInfo } from "./component"
+import { MovieCardInfo } from "./component";
 
 export const MovieCardInfoContainer = ({movie, setActiveTab, activeTab}) => {
    const dispatch = useDispatch();
@@ -10,7 +10,7 @@ export const MovieCardInfoContainer = ({movie, setActiveTab, activeTab}) => {
    };
    const deleteMovie = (movieId) => {
       dispatch(deleteMovieFromList(movieId))
-   }
+   };
 
    return(
       <MovieCardInfo  

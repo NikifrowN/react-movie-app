@@ -1,6 +1,5 @@
-
-import { TestContainer } from "../../features/watchlist/ui/testComp";
+import { WatchListContainer } from "../../features/watchlist/ui/watchlist-list/container";
 
 export const WatchlistPage = () => (
-   <TestContainer/>
+   <WatchListContainer />
 )

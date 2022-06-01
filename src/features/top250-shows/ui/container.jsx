@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux";
 import { Error } from "../../error/ui/component";
 import { LoadingSpinner } from "../../loading/ui/component";
 import { selectIsTop250ShowsLoading, selectTop250Shows } from "../module/selectors";
