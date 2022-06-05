@@ -5,7 +5,7 @@ export const watchlistSlice = createSlice({
   initialState: [],
   reducers: {
     addMovie: (state, { payload }) => {
-      if(JSON.stringify(state).includes(JSON.stringify(payload))) {
+      if(state.find(movie => movie.id === payload.id)) {
         return;
       }
       state.push(payload);

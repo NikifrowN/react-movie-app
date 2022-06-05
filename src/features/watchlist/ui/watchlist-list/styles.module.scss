@@ -1,27 +1,22 @@
 .header p{
-   font-size: 30px;
+   font-size: 1.875rem;
    font-weight: 600;
-   color: white;
+   color: var(--white);
    text-align: center;
 }
 .header button{
-   background-color: white;
-   border: 2px black solid;
-   border-radius: 5px;
-   font-size: 20px;
-   padding: 5px 15px;
+   background-color: var(--white);
+   border: 0.125rem var(--black) solid;
+   border-radius: 0.3125rem;
+   font-size: 1.25rem;
+   padding: 0.3125rem 0.9375rem;
    cursor: pointer;
    transition: all 0.3s ease;
-   margin-top: 20px;
+   margin-top: 1.25rem;
 }
 .header button:hover{
-   background-color: black;
-   border: 2px white solid;
-   color: white;
-}
-
-.items{
-   /* display: flex;
-   flex-direction: column; */
+   background-color: var(--black);
+   border: 0.125rem var(--white) solid;
+   color: var(--white);
 }
 
