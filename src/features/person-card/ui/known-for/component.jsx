@@ -10,13 +10,13 @@ export const KnownFor = ({knownFor}) => (
          {knownFor.map((item) => {
             return(
                <div className={styles.item} key={item.id}>
-                  <Link to={'/movie/' + item.id}>
+                  <Link to={'/react-movie-app/movie/' + item.id}>
                      <div className={styles.poster}>
                         <img src={item.image} />   
                      </div>
                   </Link>
                   <div>
-                     <Link to={'/movie/' + item.id} style={{color: 'inherit', textDecoration: 'none'}}> 
+                     <Link to={'/react-movie-app/movie/' + item.id} style={{color: 'inherit', textDecoration: 'none'}}> 
                         <p className={styles.title}>
                            {item.title}
                         </p>

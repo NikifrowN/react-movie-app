@@ -10,7 +10,7 @@ export const InfoItem = ({text, label}) => (
          text.map((item) => {
             return(
                <span className={styles.name} key={item.id}>
-                  <Link to={'/person/' + item.id} style={{color: 'inherit', textDecoration: 'none'}}>
+                  <Link to={'/react-movie-app/person/' + item.id} style={{color: 'inherit', textDecoration: 'none'}}>
                      {item.name}
                   </Link>
                </span>

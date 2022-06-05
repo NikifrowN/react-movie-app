@@ -10,11 +10,11 @@ export const MovieCardCast = ({cast}) => (
          return(
             <div key={item.id}>
                <div className={styles.actors}>
-                  <Link to={'/person/' + item.id} style={{color: 'inherit', textDecoration: 'none'}} >
+                  <Link to={'/react-movie-app/person/' + item.id} style={{color: 'inherit', textDecoration: 'none'}} >
                      <img loading='lazy' src={item.image}/>
                   </Link>
                   <div>
-                  <Link to={'/person/' + item.id} style={{color: 'inherit', textDecoration: 'none'}} >
+                  <Link to={'/react-movie-app/person/' + item.id} style={{color: 'inherit', textDecoration: 'none'}} >
                      <p className={styles.castName}>
                         {item.name}
                      </p>

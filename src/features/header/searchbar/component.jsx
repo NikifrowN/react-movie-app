@@ -9,7 +9,7 @@ export const SearchBar = () => {
 
    const submitHandler = (e) => {
       e.preventDefault();
-      navigate('/search/' + input);
+      navigate('/react-movie-app/search/' + input);
    };
 
    return(

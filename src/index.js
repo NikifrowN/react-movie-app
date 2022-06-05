@@ -24,13 +24,13 @@ root.render(
           <Header />
           <main className='wrapper'>
             <Routes>
-              <Route path='/' element={<MainPage/>} />
-              <Route path='/top250movies' element={<Top250MoviesPage/>} />
-              <Route path='/top250TVs' element={<Top250ShowsPage/>} />
-              <Route path='/search/:search' element={<SearchedPage />} />
-              <Route path='/movie/:movie' element={<MoviePage />} />
-              <Route path='/person/:person' element={<PersonPage/>} />
-              <Route path='/watchlist' element={<WatchlistPage/>} />
+              <Route path='/react-movie-app/' element={<MainPage/>} />
+              <Route path='/react-movie-app/top250movies' element={<Top250MoviesPage/>} />
+              <Route path='/react-movie-app/top250TVs' element={<Top250ShowsPage/>} />
+              <Route path='/react-movie-app/search/:search' element={<SearchedPage />} />
+              <Route path='/react-movie-app/movie/:movie' element={<MoviePage />} />
+              <Route path='/react-movie-app/person/:person' element={<PersonPage/>} />
+              <Route path='/react-movie-app/watchlist' element={<WatchlistPage/>} />
             </Routes>
           </main>
           <Footer/>

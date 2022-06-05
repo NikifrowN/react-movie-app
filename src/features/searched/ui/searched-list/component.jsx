@@ -15,7 +15,7 @@ export const SearchedList = ({searched, param}) => {
          )}   
          {searchedByName.map((item) => {
             return(
-               <Link className={styles.link} to={'/person/' + item.id}>
+               <Link className={styles.link} to={'/react-movie-app/person/' + item.id}>
                   <SearchedItem key={item.id} item={item}/>
                </Link>
             )
@@ -26,7 +26,7 @@ export const SearchedList = ({searched, param}) => {
          )}   
          {searchedByTitle.map((item) => {
             return(
-               <Link className={styles.link}  to={'/movie/' + item.id}>
+               <Link className={styles.link}  to={'/react-movie-app/movie/' + item.id}>
                   <SearchedItem key={item.id} item={item}/>
                </Link>
             )

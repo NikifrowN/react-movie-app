@@ -29,7 +29,7 @@ export const Top250List = ({top, label}) => {
             return(
                <Link 
                   className={styles.link} 
-                  to={'/movie/' + movie.id}
+                  to={'/react-movie-app/movie/' + movie.id}
                   key={movie.id}
                >
                   <Top250Item movie={movie} />

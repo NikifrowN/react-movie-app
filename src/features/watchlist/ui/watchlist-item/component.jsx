@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const WatchlistItem = ({movie, removeMovie}) => (
    <div className={styles.root}>
-      <Link to={'/movie/' + movie.id} key={movie.id} style={{color: 'inherit', textDecoration: 'none'}}>
+      <Link to={'/react-movie-app/movie/' + movie.id} key={movie.id} style={{color: 'inherit', textDecoration: 'none'}}>
          <div className={styles.poster}>
             <img src={movie.image} />
          </div>

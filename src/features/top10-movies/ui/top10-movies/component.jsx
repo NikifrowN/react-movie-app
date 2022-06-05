@@ -18,7 +18,7 @@ export const Top10Movies = ({ids, label}) => (
          {ids.slice(0, 10).map((movieId) => {
             return(
                <SplideSlide key={movieId}>
-                  <Link to={'/movie/' + movieId}>
+                  <Link to={'/react-movie-app/movie/' + movieId}>
                      <MoviePreviewContainer
                         movieId={movieId}
                         label={label}
