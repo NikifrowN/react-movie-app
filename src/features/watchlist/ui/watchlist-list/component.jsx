@@ -11,7 +11,10 @@ export const WatchlistList = ({watchlist, clearList}) => (
          <div className={styles.items}>
             {watchlist.map((movie) => {
                return(
-                  <WatchlistItemContainer movie={movie}/>
+                  <WatchlistItemContainer 
+                     movie={movie}
+                     key={movie.id}
+                     />
                )
             })}
          </div>

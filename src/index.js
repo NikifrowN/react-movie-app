@@ -13,6 +13,7 @@ import { MoviePage } from './pages/movie-page/component';
 import { PersonPage } from './pages/perosn-page/component';
 import { WatchlistPage } from './pages/watchlist-page/component';
 import { PersistGate } from 'redux-persist/integration/react';
+import { Footer } from './features/footer/ui/footer/component';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,6 +33,7 @@ root.render(
               <Route path='/watchlist' element={<WatchlistPage/>} />
             </Routes>
           </main>
+          <Footer/>
         </BrowserRouter>
       </PersistGate>
     </Provider>
