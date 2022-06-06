@@ -2,12 +2,18 @@ import { Link } from "react-router-dom";
 import { useSortableData } from "../../hooks/useSortableData";
 import { Top250Item } from "../top-250-item/component";
 import styles from './styles.module.scss';
+import { motion } from 'framer-motion';
 
 export const Top250List = ({top, label}) => {
    const { items, requestSort} = useSortableData(top);
 
    return(
-      <div className={styles.root}>
+      <motion.div className={styles.root}
+         animate={{ opacity: 1 }}
+         initial={{ opacity: 0 }}
+         exit={{ opacity: 0 }}
+         transition={{ duration: 0.5 }}
+      >
          <h3 className={styles.title}>
             {label}
          </h3>
@@ -36,6 +42,6 @@ export const Top250List = ({top, label}) => {
                </Link>
             )
          })}
-      </div>
+      </motion.div>
    )
 }

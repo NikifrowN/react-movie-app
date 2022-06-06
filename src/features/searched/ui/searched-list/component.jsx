@@ -1,13 +1,19 @@
 import { Link } from 'react-router-dom';
 import { SearchedItem } from '../searched-item/component';
 import styles from './styles.module.scss';
+import { motion } from 'framer-motion';
 
 export const SearchedList = ({searched, param}) => {
    const searchedByName = searched.filter(item => item.resultType === 'Name');
    const searchedByTitle = searched.filter(item => item.resultType === 'Title');
    
    return(
-      <div className={styles.root}>
+      <motion.div className={styles.root}
+         animate={{ opacity: 1 }}
+         initial={{ opacity: 0 }}
+         exit={{ opacity: 0 }}
+         transition={{ duration: 0.5 }}
+      >
          <p className={styles.title}>Results for "{param}":</p>
 
          {searchedByName.length > 0 && (
@@ -31,6 +37,6 @@ export const SearchedList = ({searched, param}) => {
                </Link>
             )
          })}
-      </div>
+      </motion.div>
    )
 }

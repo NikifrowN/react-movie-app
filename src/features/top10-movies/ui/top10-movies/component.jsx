@@ -3,9 +3,16 @@ import '@splidejs/react-splide/css';
 import { Link } from 'react-router-dom';
 import { MoviePreviewContainer } from '../../../movie-preview/ui/container';
 import styles from './styles.module.scss';
+import { motion } from 'framer-motion';
 
 export const Top10Movies = ({ids, label}) => (
-   <div className={styles.root}>
+   <motion.div 
+      className={styles.root}
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+   >
       <p className={styles.title}>{label}</p>
       <Splide options={{
          perMove: 2,
@@ -28,5 +35,5 @@ export const Top10Movies = ({ids, label}) => (
             )
          })}
       </Splide>   
-   </div>
+   </motion.div>
 )
